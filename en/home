@@ -13,22 +13,22 @@
    <body>
         <ul class="head">
             <li class="head-box site-box">
-                <a href="home.html" class="site-name">RenardElectric</a>
+                <a href="home" class="site-name">RenardElectric</a>
             </li>
             <li class="head-box">
-                <a href="home.html" class="header">
+                <a href="home" class="active header">
                     <i class="fa-solid fa-house-chimney"></i>
                     Home
                 </a>
             </li>
             <li class="head-box">
-                <a href="maps.html" class="header">
+                <a href="maps" class="header">
                     <i class="fa-solid fa-map"></i>
                     Maps
                 </a>
             </li>
             <li class="head-box">
-                <a href="news.html" class="active header">
+                <a href="news" class="header">
                     <i class="fa-solid fa-newspaper"></i>
                     News
                 </a>
@@ -46,13 +46,13 @@
                         </a>
                     </li>
                     <li class="lang-box header">
-                        <a href="..\fr\news.html">
+                        <a href="..\fr\home">
                             <img src="..\content\images\flags\fr.png" class="lang-falg">
                             <span> Français</span>
                         </a>
                     </li>
                     <li class="lang-box header">
-                        <a href="..\de\news.html">
+                        <a href="..\de\home">
                             <img src="..\content\images\flags\de.png" class="lang-falg">
                             <span> Deutsch</span>
                         </a>
@@ -60,5 +60,7 @@
                 </ul>
             </li>
         </ul>
+
+        <script src="../script/script.js"></script>
    </body>
 </html>

@@ -13,46 +13,46 @@
    <body>
         <ul class="head">
             <li class="head-box site-box">
-                <a href="home.html" class="site-name">RenardElectric</a>
+                <a href="home" class="site-name">RenardElectric</a>
             </li>
             <li class="head-box">
-                <a href="home.html" class="active header">
+                <a href="home" class="active header">
                     <i class="fa-solid fa-house-chimney"></i>
-                    Startseite
+                    Maison
                 </a>
             </li>
             <li class="head-box">
-                <a href="maps.html" class="header">
+                <a href="maps" class="header">
                     <i class="fa-solid fa-map"></i>
                     Maps
                 </a>
             </li>
             <li class="head-box">
-                <a href="news.html" class="header">
+                <a href="news" class="header">
                     <i class="fa-solid fa-newspaper"></i>
-                    Neuigkeiten
+                    Nouvelles
                 </a>
             </li>
             <li class="head-box lang">
                 <a href="#" class="header">
                     <i class="fa-solid fa-globe"></i>
-                    <span>Sprache</span>
+                    <span>Language</span>
                 </a>
                 <ul class="dropdown" aria-label="submenu">
                     <li class="lang-box header">
-                        <a href="..\en\home.html">
+                        <a href="..\en\home">
                             <img src="..\content\images\flags\en.png" class="lang-falg">
                             <span> English</span>
                         </a>
                     </li>
-                    <li class="lang-box header">
-                        <a href="..\fr\home.html">
+                    <li class="lang-box active header">
+                        <a href="">
                             <img src="..\content\images\flags\fr.png" class="lang-falg">
                             <span> Français</span>
                         </a>
                     </li>
-                    <li class="lang-box active header">
-                        <a href="">
+                    <li class="lang-box header">
+                        <a href="..\de\home">
                             <img src="..\content\images\flags\de.png" class="lang-falg">
                             <span> Deutsch</span>
                         </a>
@@ -60,20 +60,5 @@
                 </ul>
             </li>
         </ul>
-
-        <p class="text">Salut</p>
-        
-        <img id="smiley" alt="Smiley face" src="https://assets.codepen.io/6093409/smiley-face.png">
-        
-        <script>
-
-            const smiley = document.querySelector("#smiley");
-
-            smiley.addEventListener("click", () => {
-                alert(`Smiley dits "Bienvenue!"`);
-            });
-
-        </script>
-
    </body>
 </html>

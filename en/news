@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   
    <head>
         <link rel="stylesheet" href="../style/style.css">
@@ -13,24 +13,24 @@
    <body>
         <ul class="head">
             <li class="head-box site-box">
-                <a href="home.html" class="site-name">RenardElectric</a>
+                <a href="home" class="site-name">RenardElectric</a>
             </li>
             <li class="head-box">
-                <a href="home.html" class="header">
+                <a href="home" class="header">
                     <i class="fa-solid fa-house-chimney"></i>
-                    Maison
+                    Home
                 </a>
             </li>
             <li class="head-box">
-                <a href="maps.html" class="header">
+                <a href="maps" class="header">
                     <i class="fa-solid fa-map"></i>
                     Maps
                 </a>
             </li>
             <li class="head-box">
-                <a href="news.html" class="active header">
+                <a href="news" class="active header">
                     <i class="fa-solid fa-newspaper"></i>
-                    Nouvelles
+                    News
                 </a>
             </li>
             <li class="head-box lang">
@@ -39,20 +39,20 @@
                     <span>Language</span>
                 </a>
                 <ul class="dropdown" aria-label="submenu">
-                    <li class="lang-box header">
-                        <a href="..\en\news.html">
+                    <li class="lang-box active header">
+                        <a href="">
                             <img src="..\content\images\flags\en.png" class="lang-falg">
                             <span> English</span>
                         </a>
                     </li>
-                    <li class="lang-box active header">
-                        <a href="">
+                    <li class="lang-box header">
+                        <a href="..\fr\news">
                             <img src="..\content\images\flags\fr.png" class="lang-falg">
                             <span> Français</span>
                         </a>
                     </li>
                     <li class="lang-box header">
-                        <a href="..\de\news.html">
+                        <a href="..\de\news">
                             <img src="..\content\images\flags\de.png" class="lang-falg">
                             <span> Deutsch</span>
                         </a>

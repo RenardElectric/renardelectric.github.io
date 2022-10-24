@@ -1,18 +1,21 @@
 :root {
     --text-color: rgb(175, 175, 175);
-    --header-color: rgb(75, 75, 75);
+    --background-color: rgb(75, 75, 75);
     --accent-color: brown
+}
+
+body {
+    margin: max(8px, 0.76vw);
 }
 
 .head {
     display: grid;
-    grid-template-rows: 50px;
+    grid-template-rows: max(50px, 2.6vw);
     place-items: center;
-    background-color: var(--header-color);
-    border-radius: 15px;
+    background-color: var(--background-color);
+    border-radius: max(15px, 0.78vw);
     grid-template-columns: 60% repeat(4, auto);
     transition: grid-template-columns 1s;
-
     margin: 0;
     padding-left: 0;
 }
@@ -29,16 +32,16 @@
 
 .site-name {
     position: relative;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: max(15px, 0.78vw);
+    border-bottom-left-radius: max(15px, 0.78vw);
     background-color: var(--accent-color);
-    padding: 8.5px;
-    font-size:30px;
+    padding: max(8.5px, 0.44vw);
+    font-size: max(30px, 1.56vw);
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 1px 1px rgba(0,0,0);
+    text-shadow:0 max(1px, 0.05vw) max(1px, 0.05vw) rgba(0,0,0);
     right: 0px;
     transition: opacity 3s;
 }
@@ -46,19 +49,19 @@
 .header {
     text-align: center;
     display: inline-block;
-    font-size: 24px;
+    font-size: max(24px, 1.25vw);
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 1px 1px rgba(0,0,0);
+    text-shadow:0 max(1px, 0.05vw) max(1px, 0.05vw) rgba(0,0,0);
 }
 
 .header::after {
     content: "";
     position: absolute;
     top: 100%;  
-    height: 4px;
-    border-radius: 2px;
+    height: max(4px, 0.21vw);
+    border-radius: max(2px, 0.10vw);
     background-color: var(--text-color);
     width: 40%;
     left: 30%;
@@ -77,32 +80,33 @@
 
 .lang-box {
 	display: block;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: max(15px, 0.78vw);
+    margin-bottom: max(15px, 0.78vw);
+    margin-left: max(10px, 0.52vw);
+    margin-right: max(10px, 0.52vw);
 	position: relative;
 	text-decoration: none;
 }
 
 .dropdown {
     position: absolute;
-    background: var(--header-color);
+    background: var(--background-color);
     overflow: hidden;
     padding: 0;
-    width: 9rem;
-    right: -10px;
-    margin-top: 1rem;
-    border-radius: 10px;
+    width: max(144px, 7.5vw);
+    right: max(-10px, -0.52vw);
+    margin-top: max(19.2px, 1vw);
+    border-radius: max(10px, 0.52vw);
     height: 0%;
     transition: height 0.5s 0.15s ease;
+    z-index: 1;
 }
 
 .lang:hover > .dropdown,
 .lang:focus-within > .dropdown,
 .dropdown:hover
 .dropdown:focus {
-    height: 9rem;
+    height: max(144px, 7.5vw);
     transition: height 0.5s ease;
 }
 
@@ -112,13 +116,13 @@
 }
 
 .lang-box a span {
-	font-size: 1.5rem;
+	font-size: max(24px, 1.25vw);
 }
 
 .lang-falg{
-    width: 35px;
-    height: 21px;
-    border-radius: 4px;
+    width: max(35px, 1.82vw);
+    height: max(21px, 1.1vw);
+    border-radius: max(4px, 0.21vw);
 }
 
 .active,
@@ -137,7 +141,7 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 599px) {
     .head {
         grid-template-rows: 75px;
     }
