@@ -1,19 +1,20 @@
 :root {
     --text-color: rgb(175, 175, 175);
     --background-color: rgb(75, 75, 75);
-    --accent-color: brown
+    --accent-color: brown;
+    --screen-size-header: 19.2;
 }
 
 body {
-    margin: max(8px, 0.76vw);
+    margin: max(8px, calc(8vw/var(--screen-size-header)));
 }
 
 .head {
     display: grid;
-    grid-template-rows: max(50px, 2.6vw);
+    grid-template-rows: max(50px, calc(50vw/var(--screen-size-header)));
     place-items: center;
     background-color: var(--background-color);
-    border-radius: max(15px, 0.78vw);
+    border-radius: max(15px, calc(15vw/var(--screen-size-header)));
     grid-template-columns: 60% repeat(4, auto);
     transition: grid-template-columns 1s;
     margin: 0;
@@ -32,16 +33,16 @@ body {
 
 .site-name {
     position: relative;
-    border-top-left-radius: max(15px, 0.78vw);
-    border-bottom-left-radius: max(15px, 0.78vw);
+    border-top-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
+    border-bottom-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     background-color: var(--accent-color);
-    padding: max(8.5px, 0.44vw);
-    font-size: max(30px, 1.56vw);
+    padding: max(8.5px, calc(8.5vw/var(--screen-size-header)));
+    font-size: max(30px, calc(30vw/var(--screen-size-header)));
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 max(1px, 0.05vw) max(1px, 0.05vw) rgba(0,0,0);
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
     right: 0px;
     transition: opacity 3s;
 }
@@ -49,19 +50,19 @@ body {
 .header {
     text-align: center;
     display: inline-block;
-    font-size: max(24px, 1.25vw);
+    font-size: max(24px, calc(24vw/var(--screen-size-header)));
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 max(1px, 0.05vw) max(1px, 0.05vw) rgba(0,0,0);
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .header::after {
     content: "";
     position: absolute;
     top: 100%;  
-    height: max(4px, 0.21vw);
-    border-radius: max(2px, 0.10vw);
+    height: max(4px, calc(4vw/var(--screen-size-header)));
+    border-radius: max(2px, calc(2vw/var(--screen-size-header)));
     background-color: var(--text-color);
     width: 40%;
     left: 30%;
@@ -80,10 +81,10 @@ body {
 
 .lang-box {
 	display: block;
-    margin-top: max(15px, 0.78vw);
-    margin-bottom: max(15px, 0.78vw);
-    margin-left: max(10px, 0.52vw);
-    margin-right: max(10px, 0.52vw);
+    margin-top: max(15px, calc(15vw/var(--screen-size-header)));
+    margin-bottom: max(15px, calc(15vw/var(--screen-size-header)));
+    margin-left: max(10px, calc(10vw/var(--screen-size-header)));
+    margin-right: max(10px, calc(10vw/var(--screen-size-header)));
 	position: relative;
 	text-decoration: none;
 }
@@ -93,10 +94,10 @@ body {
     background: var(--background-color);
     overflow: hidden;
     padding: 0;
-    width: max(144px, 7.5vw);
-    right: max(-10px, -0.52vw);
-    margin-top: max(19.2px, 1vw);
-    border-radius: max(10px, 0.52vw);
+    width: max(144px, calc(144vw/var(--screen-size-header)));
+    right: max(-10px, calc(-10vw/var(--screen-size-header)));
+    margin-top: max(19.2px, calc(19.2vw/var(--screen-size-header)));
+    border-radius: max(10px, calc(10vw/var(--screen-size-header)));
     height: 0%;
     transition: height 0.5s 0.15s ease;
     z-index: 1;
@@ -106,7 +107,7 @@ body {
 .lang:focus-within > .dropdown,
 .dropdown:hover
 .dropdown:focus {
-    height: max(144px, 7.5vw);
+    height: max(144px, calc(144vw/var(--screen-size-header)));
     transition: height 0.5s ease;
 }
 
@@ -116,13 +117,13 @@ body {
 }
 
 .lang-box a span {
-	font-size: max(24px, 1.25vw);
+	font-size: max(24px, calc(24vw/var(--screen-size-header)));
 }
 
 .lang-falg{
-    width: max(35px, 1.82vw);
-    height: max(21px, 1.1vw);
-    border-radius: max(4px, 0.21vw);
+    width: max(35px, calc(35vw/var(--screen-size-header)));
+    height: max(21px, calc(21vw/var(--screen-size-header)));
+    border-radius: max(4px, calc(4vw/var(--screen-size-header)));
 }
 
 .active,
