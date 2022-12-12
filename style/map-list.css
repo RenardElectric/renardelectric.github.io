@@ -113,7 +113,8 @@
     }
 
     .map_info {
-        font-size: 3.5vw;
+        font-size: 3.5vw;,
+        opacity: 100%;
     }
 
     .map_name {
@@ -134,5 +135,10 @@
     
     .map_players {
         left:3.23vw ;
+    }
+    
+    .map_infos {
+        opacity: 95%;
+        height: 30%;
     }
 }
