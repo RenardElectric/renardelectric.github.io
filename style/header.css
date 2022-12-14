@@ -11,7 +11,7 @@
     place-items: center;
     background-color: var(--background-color);
     border-radius: max(15px, calc(15vw/var(--screen-size-header)));
-    grid-template-columns: 60% repeat(4, auto);
+    grid-template-columns: 60% repeat(4, max-content);
     transition: grid-template-columns 1s;
     margin: 0;
     padding-left: 0;
