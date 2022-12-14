@@ -30,7 +30,8 @@
 
 .site-name {
     position: relative;
-    display: inline-block;
+    display: inline-grid;
+    align-content: center;
     border-top-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     border-bottom-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     background-color: var(--accent-color);
@@ -44,10 +45,6 @@
     right: 0px;
     transition: opacity 3s;
     height: max(50px, calc(50vw/var(--screen-size-header)));
-}
-
-.site-name span {
-    vertical-align: middle;
 }
 
 .header {
