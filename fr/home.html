@@ -2,8 +2,10 @@
 <html lang="fr">
   
    <head>
+        <script src="../assets/scripts/webcomponents-loader.js"></script>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/header.css">
+        <link rel="import" href="../components/fr/head.html">
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RenardElectric's Website</title>
@@ -11,56 +13,13 @@
    </head>
   
    <body>
-        <ul class="head">
-            <li class="head-box site-box">
-                <a href="home" class="site-name">
-                    RenardElectric
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="home" class="active header">
-                    <i class="fa-solid fa-house-chimney"></i>
-                    Maison
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="maps" class="header">
-                    <i class="fa-solid fa-map"></i>
-                    Maps
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="news" class="header">
-                    <i class="fa-solid fa-newspaper"></i>
-                    Nouvelles
-                </a>
-            </li>
-            <li class="head-box lang">
-                <a href="#" class="header">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>Language</span>
-                </a>
-                <ul class="dropdown" aria-label="submenu">
-                    <li class="lang-box header">
-                        <a href="..\en\home">
-                            <img src="..\content\images\flags\en.png" class="lang-falg">
-                            <span> English</span>
-                        </a>
-                    </li>
-                    <li class="lang-box active header">
-                        <a href="">
-                            <img src="..\content\images\flags\fr.png" class="lang-falg">
-                            <span> Français</span>
-                        </a>
-                    </li>
-                    <li class="lang-box header">
-                        <a href="..\de\home">
-                            <img src="..\content\images\flags\de.png" class="lang-falg">
-                            <span> Deutsch</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <div id="container"></div>
+        <script>
+            window.addEventListener("WebComponentsReady", function() {
+                var template = document.querySelectorAll('link[rel="import"]').import.querySelector('head');
+                var clone = document.importNode(template.content, true);
+                ocument.querySelector('#container').appendChild(clone);
+            }, false);
+        </script>
    </body>
 </html>
