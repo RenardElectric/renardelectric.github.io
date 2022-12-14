@@ -5,10 +5,6 @@
     --screen-size-header: 19.2;
 }
 
-body {
-    margin: max(8px, calc(8vw/var(--screen-size-header)));
-}
-
 .head {
     display: grid;
     grid-template-rows: max(50px, calc(50vw/var(--screen-size-header)));
@@ -19,6 +15,7 @@ body {
     transition: grid-template-columns 1s;
     margin: 0;
     padding-left: 0;
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .head-box {
@@ -33,18 +30,24 @@ body {
 
 .site-name {
     position: relative;
+    display: inline-block;
     border-top-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     border-bottom-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     background-color: var(--accent-color);
-    padding: max(8.5px, calc(8.5vw/var(--screen-size-header)));
+    padding-left: max(8.5px, calc(8.5vw/var(--screen-size-header)));
+    padding-right: max(8.5px, calc(8.5vw/var(--screen-size-header)));
     font-size: max(30px, calc(30vw/var(--screen-size-header)));
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
     right: 0px;
     transition: opacity 3s;
+    height: max(50px, calc(50vw/var(--screen-size-header)));
+}
+
+.site-name span {
+    vertical-align: middle;
 }
 
 .header {
@@ -54,7 +57,6 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .header::after {
@@ -67,6 +69,7 @@ body {
     width: 40%;
     left: 30%;
     transition: left 0.3s ease-out .1s, width 0.3s ease-out .1s;
+    box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .active::after,
@@ -86,7 +89,6 @@ body {
     margin-left: max(10px, calc(10vw/var(--screen-size-header)));
     margin-right: max(10px, calc(10vw/var(--screen-size-header)));
 	position: relative;
-	text-decoration: none;
 }
 
 .dropdown {
@@ -94,7 +96,7 @@ body {
     background: var(--background-color);
     overflow: hidden;
     padding: 0;
-    width: max(144px, calc(144vw/var(--screen-size-header)));
+    width: max-content;
     right: max(-10px, calc(-10vw/var(--screen-size-header)));
     margin-top: max(19.2px, calc(19.2vw/var(--screen-size-header)));
     border-radius: max(10px, calc(10vw/var(--screen-size-header)));
@@ -116,14 +118,11 @@ body {
     text-decoration: none;
 }
 
-.lang-box a span {
-	font-size: max(24px, calc(24vw/var(--screen-size-header)));
-}
-
 .lang-falg{
     width: max(35px, calc(35vw/var(--screen-size-header)));
     height: max(21px, calc(21vw/var(--screen-size-header)));
     border-radius: max(4px, calc(4vw/var(--screen-size-header)));
+    box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .active,
@@ -163,9 +162,7 @@ body {
     .lang i:active {
         color: brown;
     }
-
     .dropdown {
-        width: auto;
         margin-top: 1.7rem;
         right: -14px;
     }
