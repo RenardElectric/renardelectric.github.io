@@ -33,6 +33,9 @@
 }
 
 .map_picture {
+    display: grid;
+    align-content: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     border-radius: max(10px, calc(10vw/var(--screen-size-map-list)));
