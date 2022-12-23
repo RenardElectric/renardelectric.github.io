@@ -2,10 +2,8 @@
 <html lang="fr">
   
    <head>
-        <script src="../assets/scripts/webcomponents-loader.js"></script>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/header.css">
-        <link rel="import" href="../components/fr/head.html">
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RenardElectric's Website</title>
@@ -13,13 +11,12 @@
    </head>
   
    <body>
-        <div id="container"></div>
-        <script>
-            window.addEventListener("WebComponentsReady", function() {
-                var template = document.querySelectorAll('link[rel="import"]').import.querySelector('head');
-                var clone = document.importNode(template.content, true);
-                ocument.querySelector('#container').appendChild(clone);
-            }, false);
-        </script>
+          <div w3-include-html="/..components/fr/head.html"></div> 
+          <script src="../script/script.js"></script>
+          <script src="../script/HTML include.js"></script> 
    </body>
 </html>
+
+<script>
+includeHTML();
+</script> 
