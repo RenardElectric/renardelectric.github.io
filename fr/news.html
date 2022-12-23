@@ -4,16 +4,21 @@
    <head>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/header.css">
+
+        <script src="../script/HTML include.js"></script>
+        <script src="../script/lang/fr.js"></script>
+
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RenardElectric's Website</title>
         <meta charset="UTF-8">
    </head>
   
-   <div w3-include-html="../assets/components/fr/head.html"></div> 
-   <script src="../script/HTML include.js"></script>
+   <div w3-include-html="../assets/components/head.html"></div> 
 </html>
 
 <script>
     includeHTML();
-</script> 
+    document.getElementById("news").classList.add('active');
+    translate();
+</script>

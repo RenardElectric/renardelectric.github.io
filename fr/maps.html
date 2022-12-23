@@ -5,52 +5,22 @@
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/header.css">
         <link rel="stylesheet" href="../style/map-list.css">
+        
+        <script src="../script/HTML include.js"></script>
+        <script src="../script/lang/fr.js"></script> 
+
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RenardElectric's Website</title>
         <meta charset="UTF-8">
    </head>
 
-   <div w3-include-html="../assets/components/fr/head.html"></div> 
-   <script src="../script/HTML include.js"></script> 
-   
-   <div class="maps_div">
-        <span class="maps_grid">
-            <span class="map_section">Nouvelles Maps</span>
-            <!-- modify to change the new maps -->
-            <a href="" class="map">
-                <span class="map_info map_version">minecraft version</span>
-                <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="New Map picture" src="../assets/images/maps/new_map/1/picture.png">
-                <span class="map_info map_infos">
-                    <span class="map_name">map name</span>
-                    <span class="map_short_desc">map short desc</span>
-                </span>
-            </a>
-            <a href="" class="map">
-                <span class="map_info map_version">minecraft version</span>
-                <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="New Map picture" src="../assets/images/maps/new_map/2/picture.png">
-                <span class="map_info map_infos">
-                    <span class="map_name">map name</span>
-                    <span class="map_short_desc">map short desc</span>
-                </span>
-            </a>
-            <span class="map_section">Les autres Maps</span>
-            <!-- modify to add a new map -->
-            <a href="" class="map">
-                <span class="map_info map_version">minecraft version</span>
-                <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="Map picture" src="../assets/images/maps/">
-                <span class="map_info map_infos">
-                    <span class="map_name">map name</span>
-                    <span class="map_short_desc">map short desc</span>
-                </span>
-            </a>
-        </span>
-    </div>
+   <div w3-include-html="../assets/components/head.html"></div>
+   <div w3-include-html="../assets/components/creations.html"></div> 
 </html>
 
 <script>
-includeHTML();
-</script> 
+    includeHTML();
+    document.getElementById("maps").classList.add('active');
+    translate();
+</script>
