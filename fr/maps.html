@@ -10,60 +10,9 @@
         <title>RenardElectric's Website</title>
         <meta charset="UTF-8">
    </head>
-  
-   <body>
-        <ul class="head">
-            <li class="head-box site-box">
-                <a href="home" class="site-name">
-                    RenardElectric
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="home" class="header">
-                    <i class="fa-solid fa-house-chimney"></i>
-                    Maison
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="maps" class="active header">
-                    <i class="fa-solid fa-map"></i>
-                    Maps
-                </a>
-            </li>
-            <li class="head-box">
-                <a href="news" class="header">
-                    <i class="fa-solid fa-newspaper"></i>
-                    Nouvelles
-                </a>
-            </li>
-            <li class="head-box lang">
-                <a href="#" class="header">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>Language</span>
-                </a>
-                <ul class="dropdown" aria-label="submenu">
-                    <li class="lang-box header">
-                        <a href="..\en\maps">
-                            <img src="..\assets\images\flags\en.png" class="lang-falg">
-                            <span> English</span>
-                        </a>
-                    </li>
-                    <li class="lang-box active header">
-                        <a href="">
-                            <img src="..\assets\images\flags\fr.png" class="lang-falg">
-                            <span> Français</span>
-                        </a>
-                    </li>
-                    <li class="lang-box header">
-                        <a href="..\de\maps">
-                            <img src="..\assets\images\flags\de.png" class="lang-falg">
-                            <span> Deutsch</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-   </body>
+
+   <div w3-include-html="../assets/components/fr/head.html"></div> 
+   <script src="../script/HTML include.js"></script> 
    
    <div class="maps_div">
         <span class="maps_grid">
@@ -72,7 +21,7 @@
             <a href="" class="map">
                 <span class="map_info map_version">minecraft version</span>
                 <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="New Map picture" src="../content/images/maps/new_map/1/picture.png">
+                <img class="map_picture" alt="New Map picture" src="../assets/images/maps/new_map/1/picture.png">
                 <span class="map_info map_infos">
                     <span class="map_name">map name</span>
                     <span class="map_short_desc">map short desc</span>
@@ -81,7 +30,7 @@
             <a href="" class="map">
                 <span class="map_info map_version">minecraft version</span>
                 <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="New Map picture" src="../content/images/maps/new_map/2/picture.png">
+                <img class="map_picture" alt="New Map picture" src="../assets/images/maps/new_map/2/picture.png">
                 <span class="map_info map_infos">
                     <span class="map_name">map name</span>
                     <span class="map_short_desc">map short desc</span>
@@ -92,7 +41,7 @@
             <a href="" class="map">
                 <span class="map_info map_version">minecraft version</span>
                 <span class="map_info map_players">numbers of players</span>
-                <img class="map_picture" alt="Map picture" src="../content/images/maps/">
+                <img class="map_picture" alt="Map picture" src="../assets/images/maps/">
                 <span class="map_info map_infos">
                     <span class="map_name">map name</span>
                     <span class="map_short_desc">map short desc</span>
@@ -101,3 +50,7 @@
         </span>
     </div>
 </html>
+
+<script>
+includeHTML();
+</script> 
