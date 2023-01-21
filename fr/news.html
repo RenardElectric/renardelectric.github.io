@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
   
-   <head>
+   	<head>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/header.css">
 
-        <script src="../script/HTML include.js"></script>
         <script src="../script/lang/fr.js"></script>
+        <script src="../script/HTML include.js"></script>
 
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RenardElectric's Website</title>
         <meta charset="UTF-8">
-   </head>
+   	</head>
   
-   <div w3-include-html="../assets/components/head.html"></div> 
+    <div w3-include-html="../assets/components/head_comp.html"></div> 
 </html>
 
 <script>
-    includeHTML();
-    translate();
-    document.body.innerHTML = document.body.innerHTML.replace('header_news', 'active')
+    includeHTML("news", "fr");
 </script>

@@ -1,13 +1,13 @@
 function translate() {
     document.body.innerHTML = document.body.innerHTML
-    .replace('head.home', 'Maison')
-    .replace('head.creations', 'Creations')
-    .replace('head.news', 'Nouvelles')
-    .replace('head.language', 'Language')
+    .replace('head.home', 'Startseite')
+    .replace('head.creations', 'Kreationen')
+    .replace('head.news', 'Neuigkeiten')
+    .replace('head.language', 'Sprache')
 
 
-    .replace('creations.new_creations', 'Nouvelles creations')
-    .replace('creations.other_creations', 'Les autres creations')
+    .replace('creations.new_creations', 'New Creations')
+    .replace('creations.other_creations', 'Other Creations')
     
     .replace('creations.header_left_1', 'minecraft version')
     .replace('creations.header_right_1', 'numbers of players')
