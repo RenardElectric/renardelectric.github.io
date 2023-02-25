@@ -20,5 +20,10 @@
 </html>
 
 <script>
-    includeHTML("creations", "de");
+    includeHTML(inner_html);
+
+    function inner_html(){
+        translate()
+        document.body.innerHTML = document.body.innerHTML.replace('header_creations', 'active').replace(/actual_file/g, 'creations').replace('lang_de', 'active')
+    }
 </script>

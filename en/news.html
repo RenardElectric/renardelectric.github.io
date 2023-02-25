@@ -18,5 +18,10 @@
 </html>
 
 <script>
-    includeHTML("news", "en");
+    includeHTML(inner_html);
+
+    function inner_html(){
+        translate()
+        document.body.innerHTML = document.body.innerHTML.replace('header_news', 'active').replace(/actual_file/g, 'news').replace('lang_en', 'active')
+    }
 </script>
