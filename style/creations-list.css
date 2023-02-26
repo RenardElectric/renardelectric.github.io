@@ -44,7 +44,6 @@
 .creation_info {
     position: absolute;
     background-color: rgb(30, 30, 30);
-    opacity: 0%;
     transition:  height 0.4s ease, opacity 0.4s ease;
     font-size: max(13.1px, calc(13.1vw/var(--screen-size-creation-list)));
 }
@@ -60,7 +59,6 @@
     border-top-style: solid;
     color: var(--accent-color);
     overflow: hidden;
-    height: 0%;
 }
 
 .creation_name {
@@ -85,13 +83,37 @@
     left: max(12px, calc(12vw/var(--screen-size-creation-list)));
 }
 
-.creation:hover .creation_info {
+.creation_info {
     opacity: 100%;
 }
 
-.creation:hover .creation_infos {
+.creation_infos {
     opacity: 95%;
     height: 30%;
+}
+
+@media (pointer:fine) {
+
+    .creation_info {
+        opacity: 0%;
+    }
+    
+    .creation_infos {
+        opacity: 0%;
+        height: 0%;
+    }
+
+    .creation:hover .creation_info,
+    .creation:focus .creation_info {
+        opacity: 100%;
+    }
+
+    .creation:hover .creation_infos,
+    .creation:focus .creation_infos {
+        opacity: 95%;
+        height: 30%;
+    }
+
 }
 
 @media only screen and (max-width: 599px) {
@@ -117,7 +139,6 @@
 
     .creation_info {
         font-size: 3.5vw;
-        opacity: 100%;
     }
 
     .creation_name {
@@ -138,10 +159,5 @@
     
     .creation_players {
         left:3.23vw ;
-    }
-    
-    .creation_infos {
-        opacity: 95%;
-        height: 30%;
     }
 }
