@@ -1,10 +1,3 @@
-:root {
-    --text-color: rgb(175, 175, 175);
-    --background-color: rgb(75, 75, 75);
-    --accent-color: brown;
-    --screen-size-header: 19.2;
-}
-
 .head {
     display: grid;
     grid-template-rows: max(50px, calc(50vw/var(--screen-size-header)));
@@ -13,9 +6,9 @@
     border-radius: max(15px, calc(15vw/var(--screen-size-header)));
     grid-template-columns: 60% repeat(4, auto);
     transition: grid-template-columns 1s;
-    margin: 0;
     padding-left: 0;
     text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
+    margin: max(10px, calc(10vw/var(--screen-size-header)));
 }
 
 .head-box {

@@ -1,0 +1,165 @@
+.div {
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--background-color);
+    justify-items: center;
+    border-radius: max(10px, calc(10vw/var(--screen-size-list)));
+    column-gap: max(15px, calc(15vw/var(--screen-size-list)));
+    row-gap: max(24.3px, calc(24.3vw/var(--screen-size-list)));
+    padding: max(10px, calc(10vw/var(--screen-size-list)));
+    margin: max(10px, calc(10vw/var(--screen-size-header)));
+}
+
+.section {
+    grid-column: 1 / 3;
+    color: var(--text-color);
+    font-size: max(26.2px, calc(26.2vw/var(--screen-size-list)));
+}
+
+.creation,
+.creation_fixed {
+    color: var(--accent-color);
+    text-decoration: none;
+    position: relative;
+    height: max(153.417px, calc(153.417vw/var(--screen-size-list)));
+    width: max(272.733px, calc(272.733vw/var(--screen-size-list)));
+}
+
+.picture {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: max(10px, calc(10vw/var(--screen-size-list)));
+}
+
+.creation > span,
+.creation_fixed > span {
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    transition:  height 0.4s ease, opacity 0.4s ease;
+    font-size: max(13.1px, calc(13.1vw/var(--screen-size-list)));
+}
+
+.infos {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    bottom: 0px;
+    border-bottom-left-radius: max(10px, calc(10vw/var(--screen-size-list)));
+    border-bottom-right-radius: max(10px, calc(10vw/var(--screen-size-list)));
+    border-width: max(2px, calc(2vw/var(--screen-size-list)));
+    border-top-style: solid;
+    color: var(--accent-color);
+    overflow: hidden;
+}
+
+.name {
+    font-size: max(19.65px, calc(19.65vw/var(--screen-size-list)));
+    font-weight: bold;
+}
+
+.header_left,
+.header_right {
+    padding: max(1.3px, calc(1.3vw/var(--screen-size-list)));
+    padding-left: max(2.6px, calc(2.6vw/var(--screen-size-list)));
+    padding-right: max(2.6px, calc(2.6vw/var(--screen-size-list)));
+    border-radius: max(4.716px, calc(4.716vw/var(--screen-size-list)));
+    top: min(-9.3px, calc(-9.3vw/var(--screen-size-list)));
+}
+
+.header_left {
+    right: max(12px, calc(12vw/var(--screen-size-list)));
+}
+
+.header_right {
+    left: max(12px, calc(12vw/var(--screen-size-list)));
+}
+
+.creation > span,
+.creation_fixed > span {
+    opacity: 100%;
+}
+
+.infos {
+    opacity: 95%;
+    height: 30%;
+}
+
+@media (pointer:fine) {
+
+    .creation > span {
+        opacity: 0%;
+    }
+    
+    .creation > .infos {
+        opacity: 0%;
+        height: 0%;
+    }
+
+    .creation:hover > span,
+    .creation:focus > span {
+        opacity: 100%;
+    }
+
+    .creation:hover > .infos,
+    .creation:focus > .infos {
+        opacity: 95%;
+        height: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+    .grid {
+        grid-template-columns: auto;
+        width: auto;
+        column-gap: 4.04vw;
+        row-gap: 6.54vw;
+        padding: 2.69vw;
+        margin-top: 2.69vw;
+    }
+
+    .section {
+        grid-column: 1;
+        color: var(--text-color);
+        font-size: 7vw;
+    }
+
+    .creation,
+    .creation_fixed {
+        height: 51.725vw;
+        width: 100%;
+    }
+
+    .creation > span,
+    .creation_fixed > span {
+        font-size: 3.5vw;
+    }
+
+    .name {
+        font-size: 7vw;
+    }
+
+    .header_left,
+    .header_right {
+        padding: 0.35vw;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+        top: -2.1vw;
+    }
+
+    .header_left {
+        right: 3.23vw;
+    }
+    
+    .header_right {
+        left:3.23vw ;
+    }
+}
