@@ -18,7 +18,7 @@
     margin-top: max(10px, calc(10vw/var(--screen-size-creation-list)));
 }
 
-.creation_section {
+.creations_section {
     grid-column: 1 / 3;
     color: var(--text-color);
     font-size: max(26.2px, calc(26.2vw/var(--screen-size-creation-list)));
@@ -66,8 +66,8 @@
     font-weight: bold;
 }
 
-.creation_version,
-.creation_players {
+.creation_header_left,
+.creation_header_right {
     padding: max(1.3px, calc(1.3vw/var(--screen-size-creation-list)));
     padding-left: max(2.6px, calc(2.6vw/var(--screen-size-creation-list)));
     padding-right: max(2.6px, calc(2.6vw/var(--screen-size-creation-list)));
@@ -75,11 +75,11 @@
     top: min(-9.3px, calc(-9.3vw/var(--screen-size-creation-list)));
 }
 
-.creation_version {
+.creation_header_left {
     right: max(12px, calc(12vw/var(--screen-size-creation-list)));
 }
 
-.creation_players {
+.creation_header_right {
     left: max(12px, calc(12vw/var(--screen-size-creation-list)));
 }
 
@@ -126,7 +126,7 @@
         margin-top: 2.69vw;
     }
 
-    .creation_section {
+    .creations_section {
         grid-column: 1;
         color: var(--text-color);
         font-size: 7vw;
@@ -145,19 +145,19 @@
         font-size: 7vw;
     }
 
-    .creation_version,
-    .creation_players {
+    .creation_header_left,
+    .creation_header_right {
         padding: 0.35vw;
         padding-left: 0.7vw;
         padding-right: 0.7vw;
         top: -2.1vw;
     }
 
-    .creation_version {
+    .creation_header_left {
         right: 3.23vw;
     }
     
-    .creation_players {
+    .creation_header_right {
         left:3.23vw ;
     }
 }
