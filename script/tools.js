@@ -27,7 +27,7 @@ function addClassAll(str, replace) {
 }
 
 function replaceAll(str, replace) {
-    document.body.innerHTML = document.body.innerHTML.replace(/str/g, replace)
+    document.body.innerHTML = document.body.innerHTML.replace(new RegExp("actual_file", 'g'), replace)
 }
 
 function translate(lang) {

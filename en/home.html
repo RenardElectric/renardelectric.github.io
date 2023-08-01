@@ -24,6 +24,8 @@
 		translate('en')
 		addClassAll('lang_en', 'active')
 		addClassAll('header_home', 'active')
-		replaceAll('actual_file', 'home')
+		replaceAll('/actual_file/g', 'home')
+		// document.body.innerHTML = document.body.innerHTML.replace(/actual_file/g, 'home')
+
 	}
 </script> 
