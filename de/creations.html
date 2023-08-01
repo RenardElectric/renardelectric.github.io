@@ -3,8 +3,7 @@
 
     <head>
         <link rel="stylesheet" href="../style/style.css">
-       
-        <script src="../script/lang/de.js"></script> 
+
         <script src="../script/tools.js"></script>
 
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
@@ -22,9 +21,9 @@
     includeHTML(inner_html);
 
     function inner_html(){
-        translate()
-        addAll('lang_de', 'active')
-        addAll('header_creations', 'active')
+        translate('de')
+        addClassAll('lang_de', 'active')
+        addClassAll('header_creations', 'active')
         replaceAll('actual_file', 'creations')
     }
 </script>

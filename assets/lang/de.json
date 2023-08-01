@@ -1,0 +1,25 @@
+{
+  "header_home": "Startseite",
+  "header_creations": "Kreationen",
+  "header_news": "Neuigkeiten",
+  "header_lang": "Sprache",
+
+
+  "new_creations": "New Creations",
+  "other_creations": "Other Creations",
+
+  "creation_1.header_left": "minecraft version",
+  "creation_1.header_right": "numbers of players",
+  "creation_1.name": "creation name",
+  "creation_1.short_desc": "creation short desc",
+
+  "creation_2.header_left": "minecraft version",
+  "creation_2.header_right": "numbers of players",
+  "creation_2.name": "creation name",
+  "creation_2.short_desc": "creation short desc",
+
+  "creation_3.header_left": "minecraft version",
+  "creation_3.header_right": "numbers of players",
+  "creation_3.name": "creation name",
+  "creation_3.short_desc": "creation short desc"
+}
