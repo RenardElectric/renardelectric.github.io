@@ -35,7 +35,7 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
-    right: 0px;
+    right: 0;
     transition: opacity 3s;
     height: max(50px, calc(50vw/var(--screen-size-header)));
 }
@@ -90,14 +90,14 @@
     right: max(-10px, calc(-10vw/var(--screen-size-header)));
     margin-top: max(19.2px, calc(19.2vw/var(--screen-size-header)));
     border-radius: max(10px, calc(10vw/var(--screen-size-header)));
-    height: 0%;
+    height: 0;
     transition: height 0.5s 0.15s ease;
     z-index: 1;
 }
 
 .lang:hover > .dropdown,
 .lang:focus-within > .dropdown,
-.dropdown:hover
+.dropdown:hover,
 .dropdown:focus {
     height: max(144px, calc(144vw/var(--screen-size-header)));
     transition: height 0.5s ease;
@@ -108,7 +108,7 @@
     text-decoration: none;
 }
 
-.lang-falg{
+.lang-flag{
     width: max(35px, calc(35vw/var(--screen-size-header)));
     height: max(21px, calc(21vw/var(--screen-size-header)));
     border-radius: max(4px, calc(4vw/var(--screen-size-header)));
@@ -122,12 +122,12 @@
 
 @media only screen and (max-width: 1279px) {
     .site-name {
-        opacity: 0%;
+        opacity: 0;
         right: 213px;
         transition: opacity 0.5s, right 0s 0.5s;
     }
     .head {
-        grid-template-columns: 0% repeat(4, auto);
+        grid-template-columns: 0 repeat(4, auto);
     }
 }
 
@@ -158,7 +158,7 @@
     }
     .lang:hover > .dropdown,
     .lang:focus-within > .dropdown,
-    .dropdown:hover
+    .dropdown:hover,
     .dropdown:focus {
         height: 123px;
     }
@@ -166,7 +166,7 @@
         display: inline-block;
         position: relative;
     }
-    .lang-falg{
+    .lang-flag{
         display: inline-block;
         position: relative;
     }

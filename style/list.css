@@ -51,7 +51,7 @@
     display: grid;
     place-items: center;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     border-bottom-left-radius: max(10px, calc(10vw/var(--screen-size-list)));
     border-bottom-right-radius: max(10px, calc(10vw/var(--screen-size-list)));
     border-width: max(2px, calc(2vw/var(--screen-size-list)));
@@ -67,9 +67,7 @@
 
 .header_left,
 .header_right {
-    padding: max(1.3px, calc(1.3vw/var(--screen-size-list)));
-    padding-left: max(2.6px, calc(2.6vw/var(--screen-size-list)));
-    padding-right: max(2.6px, calc(2.6vw/var(--screen-size-list)));
+    padding: max(1.3px, calc(1.3vw / var(--screen-size-list))) max(2.6px, calc(2.6vw / var(--screen-size-list)));
     border-radius: max(4.716px, calc(4.716vw/var(--screen-size-list)));
     top: min(-9.3px, calc(-9.3vw/var(--screen-size-list)));
 }
@@ -95,12 +93,12 @@
 @media (pointer:fine) {
 
     .creation > span {
-        opacity: 0%;
+        opacity: 0;
     }
     
     .creation > .infos {
-        opacity: 0%;
-        height: 0%;
+        opacity: 0;
+        height: 0;
     }
 
     .creation:hover > span,
