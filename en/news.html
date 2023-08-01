@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../style/style.css">
 
         <script src="../script/lang/en.js"></script>
-        <script src="../script/HTML include.js"></script>
+        <script src="../script/tools.js"></script>
 
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,8 @@
 
     function inner_html(){
         translate()
-        document.body.innerHTML = document.body.innerHTML.replace('header_news', 'active').replace(/actual_file/g, 'news').replace('lang_en', 'active')
+        addAll('lang_en', 'active')
+        addAll('header_news', 'active')
+        replaceAll('actual_file', 'news')
     }
 </script>
