@@ -1,6 +1,6 @@
 main {
     display: grid;
-    place-items: center;
+    place-items: start center;
     flex: 1;
 }
 
