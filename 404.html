@@ -5,10 +5,8 @@
         <meta name="description" content="RenardElectric's Website 404 page">
         <title>RenardElectric's Website - 404</title>
 
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/warning.css">
-
-        <script src="script/tools.js"></script>
+        <link rel="stylesheet" href="https://renardelectric.github.io/style/style.css">
+        <link rel="stylesheet" href="https://renardelectric.github.io/style/warning.css">
     </head>
     <body>
     <main>
@@ -22,8 +20,5 @@
 </html>
 
 <script>
-    addMetaDatas();
-
-    let userLang = getLang();
-    document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href=' + userLang + '/home>Back to home page</a>');
+    document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href="home">Back to home page</a>');
 </script>
