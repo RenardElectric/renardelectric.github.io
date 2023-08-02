@@ -1,17 +1,19 @@
 https://renardelectric.github.io
-
 https://renardelectric.github.io/home
 https://renardelectric.github.io/news
 https://renardelectric.github.io/creations
 
+https://renardelectric.github.io/en
 https://renardelectric.github.io/en/home
 https://renardelectric.github.io/en/news
 https://renardelectric.github.io/en/creations
 
+https://renardelectric.github.io/fr
 https://renardelectric.github.io/fr/home
 https://renardelectric.github.io/fr/news
 https://renardelectric.github.io/fr/creations
 
+https://renardelectric.github.io/de
 https://renardelectric.github.io/de/home
 https://renardelectric.github.io/de/news
 https://renardelectric.github.io/de/creations
