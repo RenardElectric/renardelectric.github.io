@@ -80,6 +80,7 @@ function getLang() {
 function addMetaDatas() {
     addMeta("theme-color", "rgb(75, 75, 75)");
     addMeta("color-scheme", "dark");
+    addMeta("viewport", "width=device-width, initial-scale=1");
     addMeta("author", "RenardElectric");
     addMeta("application-name", "RenardElectric's Website");
 }
