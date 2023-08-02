@@ -5,10 +5,15 @@
       <meta name="description" content="RenardElectric's Website creations page">
       <title>RenardElectric's Website - Creations</title>
 
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="style/warning.css">
+
       <script src="script/tools.js"></script>
    </head>
    <body>
-      If you are not redirected, click
+   <main>
+      <div class="redirect"></div>
+   </main>
    </body>
 </html>
 
@@ -17,5 +22,5 @@
 
    let userLang = getLang();
    window.location.replace(userLang + "/creations");
-   document.body.insertAdjacentHTML("beforeend", '<a href=' + userLang + '/creations>here</a>');
+   document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", 'If you are not redirected, click <a href=' + userLang + '/creations>here</a>');
 </script>

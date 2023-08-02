@@ -1,7 +1,9 @@
 :root {
     --text-color: rgb(175, 175, 175);
     --background-color: rgb(75, 75, 75);
-    --accent-color: brown;
+    --accent-color: rgb(165, 42, 42);
+    --accent-color-dark: rgb(121, 30, 30);
+    --accent-color-light: rgb(222, 60, 60);
     --screen-size-header: 19.2;
     --screen-size-list: 12;
 }

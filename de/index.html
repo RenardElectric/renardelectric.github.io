@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="theme-color" content="black">
-      <meta name="color-scheme" content="dark">
-<!--      <meta http-equiv="refresh" content="0; url = home">-->
-      <title>RenardElectric's Website</title>
-   </head>
-   <body>
-      <p>If you are not redirected, click <a href="home">here</a>.</p>
-   </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url = home">
+        <meta name="description" content="RenardElectric's Website home page">
+        <title>RenardElectric's Website - Home</title>
+
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/warning.css">
+    </head>
+    <body>
+        <main>
+            <div class="redirect"></div>
+        </main>
+    </body>
 </html>
+
+<script>
+    document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", 'If you are not redirected, click <a href="home">here</a>');
+</script>

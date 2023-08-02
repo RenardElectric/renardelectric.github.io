@@ -2,6 +2,7 @@ main {
     display: grid;
     place-items: start center;
     flex: 1;
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 .grid {
@@ -148,9 +149,7 @@ main {
 
     .header_left,
     .header_right {
-        padding: 0.35vw;
-        padding-left: 0.7vw;
-        padding-right: 0.7vw;
+        padding: 0.35vw 0.7vw;
         top: -2.1vw;
     }
 
