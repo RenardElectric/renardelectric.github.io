@@ -1,6 +1,7 @@
-.div {
+main {
     display: grid;
     place-items: center;
+    flex: 1;
 }
 
 .grid {
@@ -82,7 +83,7 @@
 
 .creation > span,
 .creation_fixed > span {
-    opacity: 100%;
+    opacity: 95%;
 }
 
 .infos {

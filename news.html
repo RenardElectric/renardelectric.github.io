@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="RenardElectric's Website news page">
+      <title>RenardElectric's Website - News</title>
+
+      <script src="script/tools.js"></script>
+   </head>
+   <body>
+      If you are not redirected, click
+   </body>
+</html>
+
+<script>
+   addMetaDatas();
+
+   let userLang = getLang();
+   window.location.replace(userLang + "/news");
+   document.body.insertAdjacentHTML("beforeend", '<a href=' + userLang + '/news>here</a>');
+</script>

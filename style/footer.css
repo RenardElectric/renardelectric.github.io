@@ -1,4 +1,4 @@
-.footer {
+footer {
     display: grid;
     grid-template-rows: max(30px, calc(30vw/var(--screen-size-header)));
     place-items: center;

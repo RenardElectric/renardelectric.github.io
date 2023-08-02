@@ -2,28 +2,30 @@
 <html lang="de">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="RenardElectric's Website home page">
+        <title>RenardElectric's Website - Home</title>
+
         <link rel="stylesheet" href="../style/style.css">
 
         <script src="../script/tools.js"></script>
-
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>RenardElectric's Website</title>
-        <meta charset="UTF-8">
     </head>
 
-    <div w3-include-html="../assets/components/header_comp.html"></div>
-    <div w3-include-html="../assets/components/home_comp.html" style="flex: 1"></div>
-    <div w3-include-html="../assets/components/footer_comp.html"></div>
+    <header w3-include-html="../assets/components/header_comp.html"></header>
+    <main w3-include-html="../assets/components/home_comp.html"></main>
+    <footer w3-include-html="../assets/components/footer_comp.html"></footer>
 </html>
 
 <script>
+    addMetaDatas();
+
     includeHTML(inner_html);
 
-    function inner_html(){
-        translate('de')
-        addClassAll('lang_de', 'active')
-        addClassAll('header_home', 'active')
-        replaceAll('actual_file', 'home')
+    function inner_html() {
+        translate('de');
+        addClassAll('lang_de', 'active');
+        addClassAll('header_home', 'active');
+        replaceAll('actual_file', 'home');
     }
 </script> 

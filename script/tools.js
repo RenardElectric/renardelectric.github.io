@@ -8,9 +8,10 @@ function includeHTML(cb) {
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState === 4) {
-                    if (this.status === 200) {elm.innerHTML = this.responseText;}
-                    if (this.status === 404) {elm.innerHTML = "Page not found.";}
-                    elm.removeAttribute("w3-include-html");
+                    console.log(this.responseText);
+                    if (this.status === 200) {elm.insertAdjacentHTML("afterend", this.responseText);}
+                    if (this.status === 404) {elm.insertAdjacentHTML("afterend", "<div>Page not found.</div>");}
+                    elm.remove();
                     includeHTML(cb);
                 }
             }
@@ -23,11 +24,11 @@ function includeHTML(cb) {
 }
 
 function addClassAll(str, replace) {
-    document.getElementsByClassName(str)[Symbol.iterator]().next().value.classList.add(replace)
+    document.getElementsByClassName(str)[Symbol.iterator]().next().value.classList.add(replace);
 }
 
 function replaceAll(str, replace) {
-    document.body.innerHTML = document.body.innerHTML.replace(new RegExp("actual_file", 'g'), replace)
+    document.body.innerHTML = document.body.innerHTML.replace(new RegExp("actual_file", 'g'), replace);
 }
 
 function translate(lang) {
@@ -44,22 +45,48 @@ function applyTranslations(translations) {
         if (translations.hasOwnProperty(key)) {
             const elements = getElementByKey(document, key);
             for (let i = 0; i < elements.length; i++) {
-                elements[i].innerHTML += translations[key];
+                elements[i].insertAdjacentHTML("beforeend", translations[key]);
             }
         }
     }
 }
 
 function getElementByKey(element, key) {
-    let keys = key.split(".")
+    let keys = key.split(".");
     if (keys.length === 1) {
-        return element.getElementsByClassName(keys[0])
+        return element.getElementsByClassName(keys[0]);
     }
 
     let elements = [];
     const elem = element.getElementsByClassName(keys[0]);
     for (let i = 0; i < elem.length; i++) {
-        elements = Array.prototype.concat.call(...elements , ...getElementByKey(elem[i], keys.slice(1).join(".")) )
+        elements = Array.prototype.concat.call(...elements , ...getElementByKey(elem[i], keys.slice(1).join(".")));
     }
-    return elements
+    return elements;
+}
+
+function getLang() {
+    let userLanguages = navigator.languages;
+    userLang = "en";
+    for (let i = 0; i < userLanguages.length; i++) {
+        if (userLanguages[i].split("-")[0] in ["en", "fr", "de"]) {
+            var userLang = userLanguages[i].split("-")[0];
+            break;
+        }
+    }
+    return userLang;
+}
+
+function addMetaDatas() {
+    addMeta("theme-color", "rgb(75, 75, 75)");
+    addMeta("color-scheme", "dark");
+    addMeta("author", "RenardElectric");
+    addMeta("application-name", "RenardElectric's Website");
+}
+
+function addMeta(name, content) {
+    var meta = document.createElement('meta');
+    meta.name = name;
+    meta.content = content;
+    document.getElementsByTagName('head')[0].appendChild(meta);
 }

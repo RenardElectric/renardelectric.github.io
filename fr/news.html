@@ -2,28 +2,30 @@
 <html lang="fr">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="RenardElectric's Website news page">
+        <title>RenardElectric's Website - News</title>
+
         <link rel="stylesheet" href="../style/style.css">
 
         <script src="../script/tools.js"></script>
-
         <script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>RenardElectric's Website</title>
-        <meta charset="UTF-8">
     </head>
 
-    <div w3-include-html="../assets/components/header_comp.html"></div>
+    <header w3-include-html="../assets/components/header_comp.html"></header>
     <div style="flex: 1"></div>
-    <div w3-include-html="../assets/components/footer_comp.html"></div>
+    <footer w3-include-html="../assets/components/footer_comp.html"></footer>
 </html>
 
 <script>
+    addMetaDatas();
+
     includeHTML(inner_html);
 
-    function inner_html(){
-        translate('fr')
-        addClassAll('lang_fr', 'active')
-        addClassAll('header_news', 'active')
-        replaceAll('actual_file', 'news')
+    function inner_html() {
+        translate('fr');
+        addClassAll('lang_fr', 'active');
+        addClassAll('header_news', 'active');
+        replaceAll('actual_file', 'news');
     }
 </script>

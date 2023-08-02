@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="RenardElectric's Website creations page">
+      <title>RenardElectric's Website - Creations</title>
+
+      <script src="script/tools.js"></script>
+   </head>
+   <body>
+      If you are not redirected, click
+   </body>
+</html>
+
+<script>
+   addMetaDatas();
+
+   let userLang = getLang();
+   window.location.replace(userLang + "/creations");
+   document.body.insertAdjacentHTML("beforeend", '<a href=' + userLang + '/creations>here</a>');
+</script>
