@@ -26,3 +26,7 @@ a:hover {
 a:active  {
     color: var(--accent-color-dark);
 }
+
+p {
+    margin: 4px;
+}

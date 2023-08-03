@@ -12,9 +12,12 @@
       <script src="script/tools.js"></script>
    </head>
    <body>
-   <main>
-      <div class="redirect"></div>
-   </main>
+       <main>
+          <div class="redirect">
+              <p>Redirecting...</p>
+              <p>Please wait</p>
+          </div>
+       </main>
    </body>
 </html>
 
@@ -22,6 +25,6 @@
    addMetaDatas();
 
    let userLang = getLang();
-   window.location.replace(userLang + "/home");
+   // window.location.replace(userLang + "/home");
    document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href=' + userLang + '/home>Go to home page</a>');
 </script>
