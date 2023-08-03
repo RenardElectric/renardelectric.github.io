@@ -1,55 +1,73 @@
-.head {
-    display: grid;
-    grid-template-rows: max(50px, calc(50vw/var(--screen-size-header)));
-    place-items: center;
+header {
     background-color: var(--background-color);
     border-radius: max(15px, calc(15vw/var(--screen-size-header)));
-    grid-template-columns: 60% repeat(4, auto);
-    transition: grid-template-columns 1s;
     padding-left: 0;
     text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
     margin: max(10px, calc(10vw/var(--screen-size-header)));
 }
 
-.head-box {
+.nav {
+    display: grid;
+    place-items: center;
+    grid-template-rows: max(50px, calc(50vw/var(--screen-size-header)));
+    grid-template-columns: 60% repeat(4, auto);
+    padding: 0;
+    margin: 0;
+    transition: grid-template-columns 1s;
+}
+
+.nav > li {
     width: max-content;
     display: inline-block;
 	position: relative;
 }
 
-.site-box {
+.nav > .title_item {
     width: 100%;
+    height: 100%;
+    align-content: center;
 }
 
-.site-name {
-    position: relative;
+.title_item > h1 {
     display: inline-grid;
     align-content: center;
+    height: 100%;
     border-top-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     border-bottom-left-radius: max(15px, calc(15vw/var(--screen-size-header)));
     background-color: var(--accent-color);
-    padding-left: max(8.5px, calc(8.5vw/var(--screen-size-header)));
-    padding-right: max(8.5px, calc(8.5vw/var(--screen-size-header)));
-    font-size: max(30px, calc(30vw/var(--screen-size-header)));
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--text-color);
-    right: 0;
+    padding-left: max(10px, calc(10vw/var(--screen-size-header)));
+    padding-right: max(10px, calc(10vw/var(--screen-size-header)));
     transition: opacity 3s;
-    height: max(50px, calc(50vw/var(--screen-size-header)));
+    margin: 0;
 }
 
-.header {
+.title_item > h1 > a {
+    font-size: max(30px, calc(30vw / var(--screen-size-header)));
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "serif", serif;
+}
+
+.header_item > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
+}
+
+.header_item > a,
+.header_item > button {
     text-align: center;
     display: inline-block;
     font-size: max(24px, calc(24vw/var(--screen-size-header)));
-    cursor: pointer;
     text-decoration: none;
     color: var(--text-color);
+    font-family: "serif", serif;
 }
 
-.header::after {
+.header_item > a::after,
+.header_item > button::after {
     content: "";
     position: absolute;
     top: 100%;  
@@ -62,10 +80,11 @@
     box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.active::after,
-.header:hover::after,
-.header:focus::after,
-.header:active::after {
+.header_item > a:hover::after,
+.header_item > a:focus::after,
+.header_item > .active::after,
+.header_item > button:hover::after,
+.header_item > button:focus::after {
     background-color: var(--accent-color);
     width: 90%;
     left: 5%;
@@ -85,7 +104,7 @@
     padding: 0;
     width: max-content;
     right: max(-10px, calc(-10vw/var(--screen-size-header)));
-    margin-top: max(19.2px, calc(19.2vw/var(--screen-size-header)));
+    margin-top: max(16px, calc(16vw/var(--screen-size-header)));
     border-radius: max(10px, calc(10vw/var(--screen-size-header)));
     height: 0;
     transition: height 0.5s 0.15s ease;
@@ -100,54 +119,49 @@
     transition: height 0.5s ease;
 }
 
-.lang-box a {
+.lang-box > a {
     color: var(--text-color);
     text-decoration: none;
 }
 
 .lang-flag{
-    width: max(35px, calc(35vw/var(--screen-size-header)));
     height: max(21px, calc(21vw/var(--screen-size-header)));
     border-radius: max(4px, calc(4vw/var(--screen-size-header)));
     box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.active,
-.active a {
+.header_item > .active {
     color: var(--accent-color);
 }
 
 @media only screen and (max-width: 1279px) {
-    .site-name {
+    .title_item > h1 {
         opacity: 0;
         right: 213px;
         transition: opacity 0.5s, right 0s 0.5s;
     }
-    .head {
+    .nav {
         grid-template-columns: 0 repeat(4, auto);
     }
 }
 
 @media only screen and (max-width: 599px) {
-    .head {
+    .nav {
         grid-template-rows: 75px;
     }
-    .head-box {
+    .nav > li {
         width: min-content;
     }
-    .lang a.header span {
-        display: none;
-    }
-    .lang .header::after {
-        display: none;
-    }
-    .lang-box span{
+    .lang > button > span,
+    .lang > button::after,
+    .lang-box > a > span,
+    .lang-box > a::after {
         display: none;
     }
     .lang i:hover,
     .lang i:focus,
     .lang i:active {
-        color: brown;
+        color: var(--accent-color);
     }
     .dropdown {
         margin-top: 1.7rem;

@@ -8,8 +8,12 @@ function includeHTML(cb) {
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState === 4) {
-                    console.log(this.responseText);
-                    if (this.status === 200) {elm.insertAdjacentHTML("afterend", this.responseText);}
+                    if (this.status === 200) {
+                        let parser = new DOMParser();
+                        const doc = parser.parseFromString(this.responseText, 'text/html');
+                        document.head.insertAdjacentHTML("beforeend", doc.head.innerHTML);
+                        elm.insertAdjacentHTML("afterend", doc.body.innerHTML);
+                    }
                     if (this.status === 404) {elm.insertAdjacentHTML("afterend", "<div>Page not found.</div>");}
                     elm.remove();
                     includeHTML(cb);

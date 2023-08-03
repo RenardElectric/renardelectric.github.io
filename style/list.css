@@ -12,7 +12,7 @@ main {
     justify-items: center;
     border-radius: max(10px, calc(10vw/var(--screen-size-list)));
     column-gap: max(15px, calc(15vw/var(--screen-size-list)));
-    row-gap: max(24.3px, calc(24.3vw/var(--screen-size-list)));
+    row-gap: max(24px, calc(24vw/var(--screen-size-list)));
     padding: max(10px, calc(10vw/var(--screen-size-list)));
     margin: max(10px, calc(10vw/var(--screen-size-header)));
 }
@@ -20,7 +20,7 @@ main {
 .section {
     grid-column: 1 / 3;
     color: var(--text-color);
-    font-size: max(26.2px, calc(26.2vw/var(--screen-size-list)));
+    font-size: max(26px, calc(26vw/var(--screen-size-list)));
 }
 
 .creation,
@@ -28,8 +28,8 @@ main {
     color: var(--accent-color);
     text-decoration: none;
     position: relative;
-    height: max(153.417px, calc(153.417vw/var(--screen-size-list)));
-    width: max(272.733px, calc(272.733vw/var(--screen-size-list)));
+    height: max(153px, calc(153vw/var(--screen-size-list)));
+    width: max(272px, calc(272vw/var(--screen-size-list)));
 }
 
 .picture {
@@ -46,7 +46,7 @@ main {
     position: absolute;
     background-color: rgb(30, 30, 30);
     transition:  height 0.4s ease, opacity 0.4s ease;
-    font-size: max(13.1px, calc(13.1vw/var(--screen-size-list)));
+    font-size: max(14px, calc(14vw/var(--screen-size-list)));
 }
 
 .infos {
@@ -63,15 +63,15 @@ main {
 }
 
 .name {
-    font-size: max(19.65px, calc(19.65vw/var(--screen-size-list)));
+    font-size: max(20px, calc(20vw/var(--screen-size-list)));
     font-weight: bold;
 }
 
 .header_left,
 .header_right {
-    padding: max(1.3px, calc(1.3vw / var(--screen-size-list))) max(2.6px, calc(2.6vw / var(--screen-size-list)));
-    border-radius: max(4.716px, calc(4.716vw/var(--screen-size-list)));
-    top: min(-9.3px, calc(-9.3vw/var(--screen-size-list)));
+    padding: max(2px, calc(2vw / var(--screen-size-list))) max(4px, calc(4vw / var(--screen-size-list)));
+    border-radius: max(5px, calc(5vw/var(--screen-size-list)));
+    top: min(-10px, calc(-10vw/var(--screen-size-list)));
 }
 
 .header_left {

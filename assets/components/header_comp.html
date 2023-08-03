@@ -2,51 +2,69 @@
     <link rel="stylesheet" href="../../style/header.css">
 </head>
 
-<header class="head">
-    <div class="head-box site-box">
-        <a href="home" class="site-name">
-            RenardElectric
-        </a>
-    </div>
-    <div class="head-box">
-        <a href="home" class="header header_home">
-            <i class="fa-solid fa-house-chimney"></i>
-        </a>
-    </div>
-    <div class="head-box">
-        <a href="creations" class="header header_creations">
-            <i class="fa-solid fa-map"></i>
-        </a>
-    </div>
-    <div class="head-box">
-        <a href="news" class="header header_news">
-            <i class="fa-solid fa-newspaper"></i>
-        </a>
-    </div>
-    <div class="head-box lang">
-        <a href="#" class="header">
-            <i class="fa-solid fa-globe"></i>
-            <span class="header_lang"></span>
-        </a>
-        <ul class="dropdown" aria-label="submenu">
-            <li class="lang-box lang_en header">
-                <a href="..\en\actual_file">
-                    <img src="..\assets\images\flags\en.png" srcset="..\assets\images\flags\en.svg" class="lang-flag" alt="en">
-                    <span> English</span>
-                </a>
-            </li>
-            <li class="lang-box lang_fr header">
-                <a href="..\fr\actual_file">
-                    <img src="..\assets\images\flags\fr.png" srcset="..\assets\images\flags\fr.svg" class="lang-flag" alt="fr">
-                    <span> Français</span>
-                </a>
-            </li>
-            <li class="lang-box lang_de header">
-                <a href="..\de\actual_file">
-                    <img src="..\assets\images\flags\de.png" srcset="..\assets\images\flags\de.svg" class="lang-flag" alt="de">
-                    <span> Deutsch</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+
+                <li class="title_item">
+                    <h1>
+                        <a href="home">
+                            RenardElectric
+                        </a>
+                    </h1>
+                </li>
+
+                <li class="header_item">
+                    <a href="home" class="header_home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+
+                <li class="header_item">
+                    <a href="creations" class="header_creations">
+                        <i class="fa-solid fa-map"></i>
+                    </a>
+                </li>
+
+                <li class="header_item">
+                    <a href="news" class="header_news">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </a>
+                </li>
+
+                <li class="header_item lang">
+
+                    <button>
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="header_lang"></span>
+                    </button>
+
+                    <ul class="dropdown" aria-label="submenu">
+
+                        <li class="lang-box header_item">
+                            <a href="..\en\actual_file" class="lang_en">
+                                <img src="..\assets\images\flags\en.png" srcset="..\assets\images\flags\en.svg" class="lang-flag" alt="en">
+                                <span>English</span>
+                            </a>
+                        </li>
+
+                        <li class="lang-box header_item">
+                            <a href="..\fr\actual_file" class="lang_fr">
+                                <img src="..\assets\images\flags\fr.png" srcset="..\assets\images\flags\fr.svg" class="lang-flag" alt="fr">
+                                <span>Français</span>
+                            </a>
+                        </li>
+
+                        <li class="lang-box header_item">
+                            <a href="..\de\actual_file" class="lang_de">
+                                <img src="..\assets\images\flags\de.png" srcset="..\assets\images\flags\de.svg" class="lang-flag" alt="de">
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>

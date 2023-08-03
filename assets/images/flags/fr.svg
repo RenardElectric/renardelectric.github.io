@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" data-darkreader-mode="filter">
-    <rect width="900" height="600" fill="#ED2939"/>
-    <rect width="600" height="600" fill="#fff"/>
-    <rect width="300" height="600" fill="#002395"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="225" height="150" viewBox="0 0 9 6" data-darkreader-mode="filter">
+    <rect id="blue_stripe" width="3" height="6" y="0" x="0" fill="#002395"/>
+    <rect id="white_stripe" width="3" height="6" y="0" x="3" fill="#fff"/>
+    <rect id="red_stripe" width="3" height="6" y="0" x="6" fill="#ED2939"/>
 </svg>
