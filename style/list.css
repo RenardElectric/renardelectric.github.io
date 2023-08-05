@@ -82,8 +82,7 @@ main {
     font-weight: bold;
 }
 
-.header_left,
-.header_right {
+:is(.header_left, .header_right) {
     padding: max(2px, calc(2vw / var(--screen-size-list))) max(4px, calc(4vw / var(--screen-size-list)));
     border-radius: max(5px, calc(5vw/var(--screen-size-list)));
     top: min(-10px, calc(-10vw/var(--screen-size-list)));
@@ -97,23 +96,26 @@ main {
     left: max(12px, calc(12vw/var(--screen-size-list)));
 }
 
-:is(.creation, .creation_fixed) > span {
+:is(.creation, .creation_fixed) > :is(.header_left, .header_right) {
+    opacity: 100%;
+}
+
+:is(.creation, .creation_fixed) > .infos {
     opacity: 95%;
 }
 
 @media (pointer:fine) {
 
-    .creation > span {
+    .creation > :is(.header_left, .header_right, .infos) {
         opacity: 0;
     }
 
     .creation > .infos {
-        opacity: 0;
         height: 0;
     }
 
-    .creation:hover > span,
-    .creation:focus > span {
+    .creation:hover > :is(.header_left, .header_right),
+    .creation:focus > :is(.header_left, .header_right) {
         opacity: 100%;
     }
 
@@ -158,8 +160,7 @@ main {
         font-size: 7vw;
     }
 
-    .header_left,
-    .header_right {
+    :is(.header_left, .header_right) {
         padding: 0.35vw 0.7vw;
         top: -2.1vw;
     }

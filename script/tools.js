@@ -246,10 +246,10 @@ function getElementByKey(element, key) {
 
 function getLang() {
     let userLanguages = navigator.languages;
-    userLang = "en";
+    let userLang = "en";
     for (let i = 0; i < userLanguages.length; i++) {
         if (userLanguages[i].split("-")[0] in ["en", "fr", "de"]) {
-            var userLang = userLanguages[i].split("-")[0];
+            userLang = userLanguages[i].split("-")[0];
             break;
         }
     }
