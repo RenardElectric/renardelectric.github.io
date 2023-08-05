@@ -1,0 +1,54 @@
+{
+    "creations": {
+        "creation_1": {
+            "date": "2023-01-05",
+            "has_left_header": true,
+            "has_right_header": true,
+            "fixed_infos": true
+        },
+        "creation_2": {
+            "date": "2023-01-04",
+            "has_left_header": false,
+            "has_right_header": true,
+            "fixed_infos": false
+        },
+        "creation_3": {
+            "date": "2023-01-02",
+            "has_left_header": true,
+            "has_right_header": false,
+            "fixed_infos": true
+        },
+        "creation_4": {
+            "date": "2023-01-01",
+            "has_left_header": false,
+            "has_right_header": false,
+            "fixed_infos": false
+        }
+    },
+    "news": {
+        "news_1": {
+            "date": "2023-01-07",
+            "has_left_header": true,
+            "has_right_header": true,
+            "fixed_infos": false
+        },
+        "news_2": {
+            "date": "2023-01-05",
+            "has_left_header": false,
+            "has_right_header": true,
+            "fixed_infos": true
+        },
+        "news_3": {
+            "date": "2023-01-03",
+            "has_left_header": true,
+            "has_right_header": false,
+            "fixed_infos": false
+        },
+        "news_4": {
+            "date": "2023-01-1",
+            "has_left_header": false,
+            "has_right_header": false,
+            "fixed_infos": true
+        }
+    }
+}

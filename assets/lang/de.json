@@ -5,21 +5,51 @@
   "header_lang": "Sprache",
 
 
-  "new_creations": "New Creations",
-  "other_creations": "Other Creations",
+  "latest_updates": "Neueste Updates",
+  "new_creations": "Neue Kreationen",
+  "other_creations": "Andere Kreationen",
+  "latest_news": "Neueste Nachrichten",
+  "nothing_here": "Noch nichts da",
 
-  "creation_1.header_left": "minecraft version",
-  "creation_1.header_right": "numbers of players",
-  "creation_1.name": "creation name",
-  "creation_1.short_desc": "creation short desc",
 
-  "creation_2.header_left": "minecraft version",
-  "creation_2.header_right": "numbers of players",
-  "creation_2.name": "creation name",
-  "creation_2.short_desc": "creation short desc",
+  "creation_1.header_left": "e1 Kopfzeile links",
+  "creation_1.header_right": "e1 Kopfzeile rechts",
+  "creation_1.name": "Name der Erstellung 1",
+  "creation_1.short_desc": "Erstellung 1 Kurzbeschreibung",
 
-  "creation_3.header_left": "minecraft version",
-  "creation_3.header_right": "numbers of players",
-  "creation_3.name": "creation name",
-  "creation_3.short_desc": "creation short desc"
+  "creation_2.header_left": "e2 Kopfzeile links",
+  "creation_2.header_right": "e2 Kopfzeile rechts",
+  "creation_2.name": "Name der Erstellung 2",
+  "creation_2.short_desc": "Erstellung 2 Kurzbeschreibung",
+
+  "creation_3.header_left": "e3 Kopfzeile links",
+  "creation_3.header_right": "e3 Kopfzeile rechts",
+  "creation_3.name": "Name der Erstellung 3",
+  "creation_3.short_desc": "Erstellung 3 Kurzbeschreibung",
+
+  "creation_4.header_left": "e4 Kopfzeile links",
+  "creation_4.header_right": "e4 Kopfzeile rechts",
+  "creation_4.name": "Name der Erstellung 4",
+  "creation_4.short_desc": "Erstellung 4 Kurzbeschreibung",
+
+
+  "news_1.header_left": "n1 Kopfzeile links",
+  "news_1.header_right": "n1 Kopfzeile rechts",
+  "news_1.name": "Name der Nachrichte 1",
+  "news_1.short_desc": "Nachrichte 1 Kurzbeschreibung",
+
+  "news_2.header_left": "n2 Kopfzeile links",
+  "news_2.header_right": "n2 Kopfzeile rechts",
+  "news_2.name": "Name der Nachrichte 2",
+  "news_2.short_desc": "Nachrichte 2 Kurzbeschreibung",
+
+  "news_3.header_left": "n3 Kopfzeile links",
+  "news_3.header_right": "n3 Kopfzeile rechts",
+  "news_3.name": "Name der Nachrichte 3",
+  "news_3.short_desc": "Nachrichte 3 Kurzbeschreibung",
+
+  "news_4.header_left": "n4 Kopfzeile links",
+  "news_4.header_right": "n4 Kopfzeile rechts",
+  "news_4.name": "Name der Nachrichte 4",
+  "news_4.short_desc": "Nachrichte 4 Kurzbeschreibung"
 }

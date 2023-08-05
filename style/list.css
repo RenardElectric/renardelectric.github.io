@@ -5,7 +5,7 @@ main {
     text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.grid {
+.content {
     display: grid;
     grid-template-columns: auto auto;
     background-color: var(--background-color);
@@ -23,13 +23,18 @@ main {
     font-size: max(26px, calc(26vw/var(--screen-size-list)));
 }
 
-.creation,
-.creation_fixed {
+:is(.creation, .creation_fixed) {
     color: var(--accent-color);
     text-decoration: none;
     position: relative;
     height: max(153px, calc(153vw/var(--screen-size-list)));
     width: max(272px, calc(272vw/var(--screen-size-list)));
+    border-radius: max(10px, calc(10vw/var(--screen-size-list)));
+}
+
+:is(.creation, .creation_fixed):hover {
+    top: -1px;
+    right: -1px;
 }
 
 .picture {
@@ -39,10 +44,14 @@ main {
     width: 100%;
     height: 100%;
     border-radius: max(10px, calc(10vw/var(--screen-size-list)));
+    box-shadow:0 0 max(10px, calc(10vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.creation > span,
-.creation_fixed > span {
+:is(.creation, .creation_fixed):hover > .picture {
+    box-shadow:0 0 max(15px, calc(15vw/var(--screen-size-header))) rgba(0,0,0);
+}
+
+:is(.creation, .creation_fixed) > span {
     position: absolute;
     background-color: rgb(30, 30, 30);
     transition:  height 0.4s ease, opacity 0.4s ease;
@@ -52,14 +61,20 @@ main {
 .infos {
     display: grid;
     place-items: center;
-    width: 100%;
-    bottom: 0;
+
+    width: calc(max(272px, calc(272vw/var(--screen-size-list))) + 2px);     /**/
+    bottom: -1px;                                                           /*To prevent corner antialiasing errors*/
+    left: -1px;                                                             /**/
+
     border-bottom-left-radius: max(10px, calc(10vw/var(--screen-size-list)));
     border-bottom-right-radius: max(10px, calc(10vw/var(--screen-size-list)));
     border-width: max(2px, calc(2vw/var(--screen-size-list)));
     border-top-style: solid;
     color: var(--accent-color);
     overflow: hidden;
+
+    opacity: 95%;
+    height: 30%;
 }
 
 .name {
@@ -82,14 +97,8 @@ main {
     left: max(12px, calc(12vw/var(--screen-size-list)));
 }
 
-.creation > span,
-.creation_fixed > span {
+:is(.creation, .creation_fixed) > span {
     opacity: 95%;
-}
-
-.infos {
-    opacity: 95%;
-    height: 30%;
 }
 
 @media (pointer:fine) {
@@ -97,7 +106,7 @@ main {
     .creation > span {
         opacity: 0;
     }
-    
+
     .creation > .infos {
         opacity: 0;
         height: 0;
@@ -117,7 +126,7 @@ main {
 }
 
 @media only screen and (max-width: 599px) {
-    .grid {
+    .content {
         grid-template-columns: auto;
         width: auto;
         column-gap: 4.04vw;
@@ -132,15 +141,17 @@ main {
         font-size: 7vw;
     }
 
-    .creation,
-    .creation_fixed {
+    :is(.creation, .creation_fixed) {
         height: 51.725vw;
         width: 100%;
     }
 
-    .creation > span,
-    .creation_fixed > span {
+    :is(.creation, .creation_fixed) > span {
         font-size: 3.5vw;
+    }
+
+    .infos {
+        width: calc(100% + 2px); /*To prevent corner antialiasing errors*/
     }
 
     .name {

@@ -1,25 +1,55 @@
 {
-  "header_home": "Maison",
-  "header_creations": "Creations",
-  "header_news": "Nouvelles",
-  "header_lang": "Language",
+    "header_home": "Maison",
+    "header_creations": "Creations",
+    "header_news": "Nouvelles",
+    "header_lang": "Language",
 
 
-  "new_creations": "Nouvelles creations",
-  "other_creations": "Les autres creations",
+    "latest_updates": "Dernières mises à jour",
+    "new_creations": "Nouvelles creations",
+    "other_creations": "Les autres creations",
+    "latest_news" : "Dernières nouvelles",
+    "nothing_here": "Rien ici pour le moment",
 
-  "creation_1.header_left": "minecraft version",
-  "creation_1.header_right": "numbers of players",
-  "creation_1.name": "creation name",
-  "creation_1.short_desc": "creation short desc",
 
-  "creation_2.header_left": "minecraft version",
-  "creation_2.header_right": "numbers of players",
-  "creation_2.name": "creation name",
-  "creation_2.short_desc": "creation short desc",
+    "creation_1.header_left": "c1 entête gauche",
+    "creation_1.header_right": "c1 entête droite",
+    "creation_1.name": "création 1 nom",
+    "creation_1.short_desc": "création 1 courte desc",
 
-  "creation_3.header_left": "minecraft version",
-  "creation_3.header_right": "numbers of players",
-  "creation_3.name": "creation name",
-  "creation_3.short_desc": "creation short desc"
+    "creation_2.header_left": "c2 entête gauche",
+    "creation_2.header_right": "c2 entête droite",
+    "creation_2.name": "création 2 nom",
+    "creation_2.short_desc": "création 2 courte desc",
+
+    "creation_3.header_left": "c3 entête gauche",
+    "creation_3.header_right": "c3 entête droite",
+    "creation_3.name": "création 3 nom",
+    "creation_3.short_desc": "création 3 courte desc",
+
+    "creation_4.header_left": "c4 entête gauche",
+    "creation_4.header_right": "c4 entête droite",
+    "creation_4.name": "création 4 nom",
+    "creation_4.short_desc": "création 4 courte desc",
+
+
+    "news_1.header_left": "n1 entête gauche",
+    "news_1.header_right": "n1 entête droite",
+    "news_1.name": "nouvelle 1 nom",
+    "news_1.short_desc": "nouvelle 1 courte desc",
+
+    "news_2.header_left": "n2 entête gauche",
+    "news_2.header_right": "n2 entête droite",
+    "news_2.name": "nouvelle 2 nom",
+    "news_2.short_desc": "nouvelle 2 courte desc",
+
+    "news_3.header_left": "n3 entête gauche",
+    "news_3.header_right": "n3 entête droite",
+    "news_3.name": "nouvelle 3 nom",
+    "news_3.short_desc": "nouvelle 3 courte desc",
+
+    "news_4.header_left": "n4 entête gauche",
+    "news_4.header_right": "n4 entête droite",
+    "news_4.name": "nouvelle 4 nom",
+    "news_4.short_desc": "nouvelle 4 courte desc"
 }

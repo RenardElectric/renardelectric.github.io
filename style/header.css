@@ -56,8 +56,7 @@ header {
     text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.header_item > a,
-.header_item > button {
+.header_item > :is(a, button) {
     text-align: center;
     display: inline-block;
     font-size: max(24px, calc(24vw/var(--screen-size-header)));
@@ -66,11 +65,10 @@ header {
     font-family: "serif", serif;
 }
 
-.header_item > a::after,
-.header_item > button::after {
+.header_item > :is(a, button)::after {
     content: "";
     position: absolute;
-    top: 100%;  
+    top: 100%;
     height: max(4px, calc(4vw/var(--screen-size-header)));
     border-radius: max(2px, calc(2vw/var(--screen-size-header)));
     background-color: var(--text-color);
@@ -80,11 +78,9 @@ header {
     box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
-.header_item > a:hover::after,
-.header_item > a:focus::after,
-.header_item > .active::after,
-.header_item > button:hover::after,
-.header_item > button:focus::after {
+.header_item > :is(a, button):hover::after,
+.header_item > :is(a, button):focus::after,
+.header_item > .active::after {
     background-color: var(--accent-color);
     width: 90%;
     left: 5%;
@@ -124,7 +120,7 @@ header {
     text-decoration: none;
 }
 
-.lang-flag{
+.lang-flag {
     height: max(21px, calc(21vw/var(--screen-size-header)));
     border-radius: max(4px, calc(4vw/var(--screen-size-header)));
     box-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);

@@ -1,25 +1,56 @@
 {
-  "header_home": "Home",
-  "header_creations": "Creations",
-  "header_news": "News",
-  "header_lang": "Language",
+    "header_home": "Home",
+    "header_creations": "Creations",
+    "header_news": "News",
+    "header_lang": "Language",
 
 
-  "new_creations": "New Creations",
-  "other_creations": "Other Creations",
+    "latest_updates": "Latest Updates",
+    "new_creations": "New Creations",
+    "other_creations": "Other Creations",
+    "latest_news": "Latest News",
+    "other_news": "Other News",
+    "nothing_here": "Nothing here yet",
 
-  "creation_1.header_left": "minecraft version",
-  "creation_1.header_right": "numbers of players",
-  "creation_1.name": "creation name",
-  "creation_1.short_desc": "creation short desc",
 
-  "creation_2.header_left": "minecraft version",
-  "creation_2.header_right": "numbers of players",
-  "creation_2.name": "creation name",
-  "creation_2.short_desc": "creation short desc",
+    "creation_1.header_left": "c1 header left",
+    "creation_1.header_right": "c1 header right",
+    "creation_1.name": "creation 1 name",
+    "creation_1.short_desc": "creation 1 short desc",
 
-  "creation_3.header_left": "minecraft version",
-  "creation_3.header_right": "numbers of players",
-  "creation_3.name": "creation name",
-  "creation_3.short_desc": "creation short desc"
+    "creation_2.header_left": "c2 header left",
+    "creation_2.header_right": "c2 header right",
+    "creation_2.name": "creation 2 name",
+    "creation_2.short_desc": "creation 2 short desc",
+
+    "creation_3.header_left": "c3 header left",
+    "creation_3.header_right": "c3 header right",
+    "creation_3.name": "creation 3 name",
+    "creation_3.short_desc": "creation 3 short desc",
+
+    "creation_4.header_left": "c4 header left",
+    "creation_4.header_right": "c4 header right",
+    "creation_4.name": "creation 4 name",
+    "creation_4.short_desc": "creation 4 short desc",
+
+
+    "news_1.header_left": "n1 header left",
+    "news_1.header_right": "m1 header right",
+    "news_1.name": "news 1 name",
+    "news_1.short_desc": "news 1 short desc",
+
+    "news_2.header_left": "n2 header left",
+    "news_2.header_right": "n2 header right",
+    "news_2.name": "news 2 name",
+    "news_2.short_desc": "news 2 short desc",
+
+    "news_3.header_left": "n3 header left",
+    "news_3.header_right": "n3 header right",
+    "news_3.name": "news 3 name",
+    "news_3.short_desc": "news 3 short desc",
+
+    "news_4.header_left": "n1 header left",
+    "news_4.header_right": "n4 header right",
+    "news_4.name": "news 4 name",
+    "news_4.short_desc": "news 4 short desc"
 }
