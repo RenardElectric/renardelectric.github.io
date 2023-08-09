@@ -150,8 +150,8 @@ header {
     }
     .lang > button > span,
     .lang > button::after,
-    .lang-box > a > span,
-    .lang-box > a::after {
+    .lang-box > button > span,
+    .lang-box > button::after {
         display: none;
     }
     .lang i:hover,
