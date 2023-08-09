@@ -18,10 +18,14 @@ main {
     overflow: hidden;
 }
 
-.picture {
+.picture_container {
     margin-top: min(-10px, calc(-10vw/var(--screen-size-list)));
     height: max(193px, calc(193vw/var(--screen-size-list)));
     width: calc(100% + max(20px, calc(20vw/var(--screen-size-list))));
+}
+
+.picture {
+    width: 100%;
 }
 
 .picture_shadow {
@@ -29,7 +33,7 @@ main {
     content: "";
     display: block;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
-    margin-top: max(86px, calc(86vw/var(--screen-size-list)));
+    margin-top: min(-97px, calc(-97vw/var(--screen-size-list)));
     height: max(97px, calc(97vw/var(--screen-size-list)));
     width: max(579px, calc(579vw/var(--screen-size-list)));
 }
@@ -41,14 +45,14 @@ main {
         padding: 2.69vw;
     }
 
-    .picture {
+    .picture_container {
         margin-top: -2.69vw;
         height: auto;
         width: calc(100% + 5.38vw);
     }
 
     .picture_shadow {
-        margin-top: calc(16.2vw - 2.69vw);
+        margin-top: calc(-16.1vw);
         height: 16.2vw;
         width: calc(100% - max(20px, calc(20vw/var(--screen-size-list))));
     }
