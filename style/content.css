@@ -43,6 +43,7 @@ main {
 
     .picture {
         margin-top: -2.69vw;
+        height: auto;
         width: calc(100% + 5.38vw);
     }
 
