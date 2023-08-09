@@ -20,6 +20,7 @@ main {
 
 .picture {
     margin-top: min(-10px, calc(-10vw/var(--screen-size-list)));
+    height: max(193px, calc(193vw/var(--screen-size-list)));
     width: calc(100% + max(20px, calc(20vw/var(--screen-size-list))));
 }
 
