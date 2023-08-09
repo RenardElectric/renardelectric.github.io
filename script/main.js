@@ -264,7 +264,7 @@ function setContent() {
         .then(content => {
             document.getElementsByClassName("content")[0].classList.add(name);
             document.getElementsByClassName("content")[0].insertAdjacentHTML("beforeend", `
-                <img class="picture" alt="${name} picture" src="../../assets/content/${splices[splices.length - 2]}/${name}/banner.png">
+                <img class="picture" alt="${name} picture" src="../../assets/content/${splices[splices.length - 2]}/${name}/banner.avif">
                 <div class="picture_shadow"></div>
                 <h1 class="name"></h1>
                 ` + content
