@@ -28,7 +28,7 @@ header {
     align-content: center;
 }
 
-.title_item > h1 {
+.title_item > a {
     display: inline-grid;
     align-content: center;
     height: 100%;
@@ -39,12 +39,12 @@ header {
     padding-right: max(10px, calc(10vw/var(--screen-size-header)));
     transition: opacity 3s;
     margin: 0;
+    text-decoration: none;
 }
 
-.title_item > h1 > a {
+.title_item > a > h1 {
     font-size: max(30px, calc(30vw / var(--screen-size-header)));
     font-weight: bold;
-    text-decoration: none;
     color: var(--text-color);
     font-family: "serif", serif;
 }
@@ -131,7 +131,7 @@ header {
 }
 
 @media only screen and (max-width: 1279px) {
-    .title_item > h1 {
+    .title_item > a {
         opacity: 0;
         right: 213px;
         transition: opacity 0.5s, right 0s 0.5s;

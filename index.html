@@ -6,10 +6,7 @@
       <meta name="description" content="RenardElectric's Website home page">
       <title>RenardElectric's Website - Home</title>
 
-      <link rel="stylesheet" href="style/style.css">
       <link rel="stylesheet" href="style/warning.css">
-
-      <script src="script/tools.js"></script>
    </head>
    <body>
        <main>
@@ -21,10 +18,7 @@
    </body>
 </html>
 
-<script>
-   addMetaDatas();
-
-   let userLang = getLang();
-   window.location.replace(userLang + "/home");
-   document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href=' + userLang + '/home>Go to home page</a>');
+<script src="script/main.js">
+   window.location.replace("home");
+   document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href=/home>Go to home page</a>');
 </script>

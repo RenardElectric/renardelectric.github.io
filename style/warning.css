@@ -2,6 +2,7 @@ main {
     display: grid;
     place-items: center center;
     flex: 1;
+    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
 }
 
 div {
@@ -10,7 +11,6 @@ div {
     border-radius: max(10px, calc(10vw/var(--screen-size-list)));
     padding: max(10px, calc(10vw/var(--screen-size-list)));
     font-size: max(20px, calc(20vw/var(--screen-size-list)));
-    text-shadow:0 max(1px, calc(1vw/var(--screen-size-header))) max(1px, calc(1vw/var(--screen-size-header))) rgba(0,0,0);
     text-align: center;
 }
 

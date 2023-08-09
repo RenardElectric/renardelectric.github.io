@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="RenardElectric's Website home page">
-      <title>RenardElectric's Website - Home</title>
 
-      <link rel="stylesheet" href="style/style.css">
-      <link rel="stylesheet" href="style/warning.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="RenardElectric's Website home page">
+		<title>RenardElectric's Website - Home</title>
 
-      <script src="script/tools.js"></script>
-   </head>
-   <body>
-      <main>
-          <div class="redirect">
-              <p>Redirecting...</p>
-              <p>Please wait</p>
-          </div>
-      </main>
-   </body>
+	   	<script src="https://kit.fontawesome.com/a8745187b1.js" crossorigin="anonymous"></script>
+	</head>
+
+	<header w3-include-html="../assets/components/header_comp.html"></header>
+	<main w3-include-html="../assets/components/home_comp.html"></main>
+	<footer w3-include-html="../assets/components/footer_comp.html"></footer>
 </html>
 
-<script>
-   addMetaDatas();
-
-   let userLang = getLang();
-   window.location.replace(userLang + "/home");
-   document.body.getElementsByClassName("redirect")[0].insertAdjacentHTML("beforeend", '<a href=' + userLang + '/home>Go to home page</a>');
-</script>
+<script src="script/main.js"></script>
