@@ -161,7 +161,7 @@ function setHome() {
                     `<span class="section nothing_here"></span>`
                 );
             }
-
+            translate(lang);
         })
         .catch(err => console.error(err));
 }
@@ -190,7 +190,7 @@ function setCreations() {
                     `<span class="section nothing_here"></span>`
                 );
             }
-
+            translate(lang);
         })
         .catch(err => console.error(err));
 }
@@ -219,7 +219,7 @@ function setNews() {
                     `<span class="section nothing_here"></span>`
                 );
             }
-
+            translate(lang);
         })
         .catch(err => console.error(err));
 }
@@ -269,6 +269,7 @@ function setContent() {
                 <h1 class="name"></h1>
                 ` + content
             );
+            translate(lang);
         })
         .catch(err => console.error(err));
 }
