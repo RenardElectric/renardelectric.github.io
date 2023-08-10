@@ -82,8 +82,7 @@ function setParams() {
     splices[splices.length - 1] = splices.at(-1).split("?")[0].split(".")[0];
 
     if (splices.length > 3) {
-        // const lang = splices[3].split("?")[0].split(".")[0];
-        const active_header = splices[4];
+        const active_header = splices[3];
         if (active_header === "home" || active_header === "creations" || active_header === "news") {
             addClassAll(active_header + '_header', 'active');
         }
@@ -258,8 +257,7 @@ function setContent() {
     const splices = document.getElementsByTagName("script")[0].baseURI.split("/");
     const name = splices.at(-1).split("?")[0].split(".")[0]
 
-    // fetch('https://renardelectric.github.io/assets/content/' + splices[splices.length - 2] + '/' + file_name + '/content.html')
-    fetch('../../assets/content/' + splices[splices.length - 2] + '/' + name + '/content.html')
+    fetch('https://renardelectric.github.io/assets/content/' + splices[splices.length - 2] + '/' + name + '/content.html')
         .then(response => response.text())
         .then(content => {
             document.getElementsByClassName("content")[0].classList.add(name);
